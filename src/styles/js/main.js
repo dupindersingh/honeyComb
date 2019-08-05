@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
@@ -12,4 +14,4 @@ $(function() {
         format: 'dd MM yyyy'
     });
 
-})
+});

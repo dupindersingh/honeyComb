@@ -9,8 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 import './styles/prettyCheckable.css';
 import 'popper.js/dist/popper.min';
-import './styles/js/prettyCheckable.min';
-import './styles/js/main';
 import combineReducers from "./reducers/index";
 import getApi from "./middleware/token/get-api";
 import getWithoutToken from "./middleware/without_token/get-api";
