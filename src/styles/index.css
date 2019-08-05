@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/* common css starts here*/
+*:active, *:focus {
+    outline: 0 none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    background-color: #f4f4f6;
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    color: rgb(51, 60, 78);
+}
+
+main {
+    min-height: calc(100vh - 194px);
+}
+
+.dropdown-item {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1190px;
+    }
+}
+
+@media (max-width:767px) {
+    main {
+        min-height: calc(100vh - 248px);
+    }
+}
+
+/* common css ends here*/
+
+/* login, signup and forgot password page css starts here */
+.fill {
+    background: rgba(240, 151, 25, 1);
+    background: -moz-linear-gradient(left, rgba(240, 151, 25, 1) 0%, rgba(255, 88, 88, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240, 151, 25, 1)), color-stop(100%, rgba(255, 88, 88, 1)));
+    background: -webkit-linear-gradient(left, rgba(240, 151, 25, 1) 0%, rgba(255, 88, 88, 1) 100%);
+    background: -o-linear-gradient(left, rgba(240, 151, 25, 1) 0%, rgba(255, 88, 88, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(240, 151, 25, 1) 0%, rgba(255, 88, 88, 1) 100%);
+    background: linear-gradient(to right, rgba(240, 151, 25, 1) 0%, rgba(255, 88, 88, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09719', endColorstr='#ff5858', GradientType=1);
+}
+
+.full_page {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 80px;
+    height: 100vh;
+}
+
+.form-signin {
+    width: 100%;
+    margin: auto;
+}
+
+.form-signup {
+    max-width: 100%;
+    position: relative;
+}
+
+.widget_heading_lg {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: #333c4e;
+    border-bottom: 1px solid rgb(51, 60, 78, 0.1);
+    margin-bottom: 44px;
+}
+
+.full_page_height {
+    display: flex;
+    padding: 40px 0 90px;
+    min-height: calc(100vh - 194px);
+    align-items: center;
+    justify-content: center;
+}
+
+.widget_account {
+    display: flex;
+    box-shadow: 0 5px 7px 0 rgba(84, 84, 84, 0.05), 0 2px 4px -4px rgba(0, 0, 0, 0.5), 0 20px 60px 0 rgba(51, 60, 78, 0.27);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.reg_left {
+    width: 50%;
+    padding: 42px 42px 59px 42px;
+    background-color: #fff;
+}
+
+.reg_full {
+    max-width: 100%;
+    padding: 42px 42px 59px 42px;
+    background-color: #fff;
+    width: 480px;
+}
+
+.reg_right {
+    width: 50%;
+    background-color: rgb(51, 60, 78);
+    background-image: url(../images/register.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    padding: 90px 70px 90px 64px;
+}
+
+.reg_right::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background-color: rgb(51, 60, 78);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.reg_right h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.25;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+}
+
+.reg_right h2::before {
+    height: 1px;
+    width: 40px;
+    position: absolute;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+}
+
+.agreement {
+    font-size: 12px;
+    border-bottom: solid 1px rgb(151, 151, 151, 0.2);
+    padding-bottom: 24px;
+    margin-top: 21px;
+    margin-bottom: 24px;
+}
+
+.agreement a {
+    color: rgb(45, 203, 191);
+}
+
+.reg_right blockquote {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.block_fig {
+    display: flex;
+    align-items: center;
+}
+
+.block_fig figure {
+    width: 43px;
+    height: 43px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.block_fig figure img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block_fig figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.forgot_password {
+    font-size: 14px;
+    border-bottom: solid 1px rgb(151, 151, 151, 0.2);
+    padding-bottom: 17px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot_password a {
+    color: #2DCBBF;
+}
+
+.forgot_password a:hover,
+.forgot_password a:focus
+{
+    text-decoration: none;
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+
+
+@media (max-width:767px) {
+    .reg_left {
+        width: 100%;
+    }
+    .reg_right {
+        display: none;
+    }
+    .registration_box {
+        width: 100%;
+    }
+    .register {
+        padding: 20px 0 70px;
+    }
+    .reg_full {
+        width: 100%;
+    }
+    .full_page_height {
+        min-height: calc(100vh - 248px);
+    }
+}
+
+/* login, signup and forgot password page css ends here */
+
+
+/* welcome page css starts here */
+
+
+
+/* welcome page css ends here */

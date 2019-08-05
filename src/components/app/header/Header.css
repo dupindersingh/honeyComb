@@ -1,0 +1,150 @@
+/* header css starts here*/
+
+
+
+.navbar-custom {
+    padding: 15px 0;
+    height: 80px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-custom .nav-item {
+    padding: 0 0px 0 29px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 6px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-custom .nav-link, .navbar-custom .nav-link:focus, .navbar-custom .nav-link:hover {
+    color: #fff;
+}
+
+
+.profile_link > a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #B1B1B1 !important;
+    font-weight: 400;
+    padding: 0rem 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.profile_image {
+    height: 46px;
+    width: 46px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 5px;
+}
+
+.notifications .dropdown-toggle::after
+{
+    display: none;
+}
+.notify
+{
+    position: relative;
+}
+
+.notifications .counter {
+    position: absolute;
+    background-color: rgb(45, 203, 191);
+    color: #fff;
+    text-align: center;
+    min-width: 16px;
+    height: 16px;
+    line-height: 15px;
+    font-size: 10px;
+    font-weight: 800;
+    border-radius: 22px;
+    top: -3px;
+    left: 13px;
+    border: none;
+    padding: 0 3px;
+}
+
+.notifications > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notify_text {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+
+.message .dropdown-toggle::after
+{
+    display: none;
+}
+
+
+.message > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message_text {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.profile_link,
+.notifications,
+.message {
+    display: flex;
+    align-items: center;
+}
+
+.welcome .notify_text,
+.welcome .message_text {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .navbar-custom .nav-item {
+        padding: 0;
+    }
+    .navbar-custom {
+        padding: 22px 0;
+        height: auto;
+    }
+
+    #navbarSupportedContent .btn {
+        width: 100%;
+        margin-top: 13px;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 5px 7px 0 rgba(84, 84, 84, 0.05), 0 2px 4px -4px rgba(0, 0, 0, 0.5), 0 20px 60px 0 rgba(51, 60, 78, 0.27);
+    }
+    .navbar-custom .nav-link, .navbar-custom .nav-link:focus, .navbar-custom .nav-link:hover {
+        color: rgb(51, 60, 78);
+    }
+}
+/* header css ends here*/

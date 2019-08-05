@@ -1,0 +1,9 @@
+/* modal css starts here */
+.modal-backdrop {
+    background-color: #14222B;
+}
+
+.modal-backdrop.show {
+    opacity: .92;
+}
+/* modal css ends here */
